@@ -5,6 +5,7 @@ module RobotApp
   class CommandParser
     include RobotApp::TypeCheck
 
+    # Converts an array of string commands to lambda commands
     # cmd = ['PLACE 1,2,SOUTH','MOVE','RIGHT','LEFT', 'REPORT']
     # to
     # cmd = [

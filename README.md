@@ -9,7 +9,6 @@ In the root folder, type the following:
   ```bash
   ruby main.rb
   ```
-
 How to set commands for robot:
 ========
 Each set of commands is a run.  All run yaml files are located in the runs folder.  In the config.yml(app/config/config.yml) file, you can
@@ -21,4 +20,20 @@ By default, the object that is moving on the arena is "Robot", and the space in 
 In the config.yml file, you can also set the object as "Lizard", and the arena to "BadBoard".
 
 "Robot" moves according to the document rules, whereas "Lizard" moves 3 spaces at once and turn erratically.
-"BadBoard" act according to the document rules
+
+"Board" act according to the document rules.  "Board" will ingore commands that make objects fall off the arena, and it will ignore 
+any commands before the object is placed on the arena.  "BadBoard" will let the object fall off the arena and stop(throw exception).
+
+User can create own object or board as long as the object is placed in the configuration.rb file and supplies the methods as follows:
+Object: 
+    clone
+    place
+    move!
+    turn_left!
+    turn_right!
+    report
+
+Arena:
+    take_action
+
+

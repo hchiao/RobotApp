@@ -3,4 +3,4 @@
 :arena:       Board
 #:arena:       BadBoard
 :cmd_handler: CommandParser
-:run:         run2
+:run:         run1

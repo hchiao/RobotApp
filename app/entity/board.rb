@@ -4,6 +4,15 @@ module RobotApp
     BOARD_SIZE_X = 5
     BOARD_SIZE_Y = 5
 
+    # block must be an array of lambda
+    # example:
+    # [
+    #   ->(obj, exicute){obj.place([1,2,SOUTH])}',
+    #   ->(obj, exicute){obj.move!},
+    #   ->(obj, exicute){obj.turn_right!}
+    #   ->(obj, exicute){obj.turn_left!}
+    #   ->(obj, exicute){obj.report(exicute)}
+    # ]
     def take_action(obj, &block)
       block.call.each do |action|
         if action_valid(try_action(obj, action))
@@ -13,9 +22,10 @@ module RobotApp
           puts "Obj: Can't do that"
           next
         end
-
       end
     end
+
+    private
 
     def try_action(obj, action)
       clone = obj.clone

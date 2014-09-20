@@ -25,15 +25,9 @@ In the config.yml file, you can also set the object as "Lizard", and the arena t
 any commands before the object is placed on the arena.  "BadBoard" will let the object fall off the arena and stop(throw exception).
 
 User can create own object or board as long as the object is placed in the configuration.rb file and supplies the methods as follows:
-Object: 
-    clone
-    place
-    move!
-    turn_left!
-    turn_right!
-    report
 
-Arena:
-    take_action
+Object: `clone`, `place`, `move!`, `turn_left!`, `turn_right!` and `report`.
+
+Arena: `take_action`.
 
 

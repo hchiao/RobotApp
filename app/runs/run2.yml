@@ -1,0 +1,9 @@
+- PLACE 2,4,EAST
+- MOVE
+- RIGHT
+- LEFT
+- LEFT
+- MOVE
+- RIGHT
+- MOVE
+- REPORT

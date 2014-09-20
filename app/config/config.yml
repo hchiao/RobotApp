@@ -1,0 +1,6 @@
+:obj:         Robot
+#:obj:         Lizard
+:arena:       Board
+#:arena:       BadBoard
+:cmd_handler: CommandParser
+:run:         run2

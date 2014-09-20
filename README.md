@@ -6,6 +6,6 @@ Robot takes a set of commands to moving on a board.  The robot has to also follo
 How to run
 ========
 In the command line type
-  ```Command line
-  cmd> ruby main.rb
+  ```bash
+  ruby main.rb
   ```

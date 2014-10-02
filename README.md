@@ -9,6 +9,14 @@ In the root folder, type the following:
   ```bash
   ruby main.rb
   ```
+
+Unit Test:
+========
+To run all unit test type the following in root folder.
+  ```bash
+  rspec
+  ```
+
 How to set commands for robot:
 ========
 Each set of commands is a run.  All run yaml files are located in the runs folder.  In the config.yml(app/config/config.yml) file, you can
@@ -30,6 +38,3 @@ Object: `clone`, `place`, `move!`, `turn_left!`, `turn_right!` and `report`.
 
 Arena: `take_action`.
 
-Unit Test:
-========
-To run all unit test type 'rspec' in root folder.

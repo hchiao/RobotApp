@@ -30,4 +30,6 @@ Object: `clone`, `place`, `move!`, `turn_left!`, `turn_right!` and `report`.
 
 Arena: `take_action`.
 
-
+Unit Test:
+========
+To run all unit test type 'rspec' in root folder.
